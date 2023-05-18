@@ -12,6 +12,7 @@ jsconfig.json
 *.ear
 *.exe
 *.dll
+*.so
 
 .idea/
 .vscode/
