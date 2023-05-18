@@ -11,12 +11,10 @@ export const supabase = createClient(
 
 export default function Setup() {
   const googleLogin = async () => {
-    const { user, session, error } = await supabase.auth.signInWithOAuth(
-      {
-        provider: "google",
-      },
-      { redirectTo: "/success" }
-    );
+    const { user, session, error } = await supabase.auth.signInWithOAuth({
+      provider: "google",
+      options: { redirectTo: "https://autocomplete.live/success" },
+    });
   };
 
   // useEffect(() => {
