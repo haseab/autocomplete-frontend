@@ -15,7 +15,7 @@ export default function Setup() {
       {
         provider: "google",
       },
-      { redirectTo: "https://autocomplete.live/" }
+      { redirectTo: "https://autocomplete.live/success" }
     );
   };
 
