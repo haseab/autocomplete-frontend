@@ -43,19 +43,31 @@ export default function Setup() {
             flexGrow: 1,
           }}
         >
-          <Grid>
+          <Grid item>
+            <img
+              src="official-transparent-autocomplete-gif.gif"
+              style={{
+                display: "block",
+                width: "50%",
+                marginLeft: "auto",
+                marginRight: "auto",
+                marginTop: "-7%",
+              }}
+            ></img>
+          </Grid>
+          <Grid item>
             <Typography
               variant="h3"
               className="type"
               sx={{
-                paddingTop: "50%",
+                // marginTop: "-15%",
                 paddingBottom: "50px",
               }}
             >
               Sign up to use Extension
             </Typography>
           </Grid>
-          <Grid>
+          <Grid item>
             <button className="image-button" onClick={googleLogin}>
               <img src="/sign-in-with-google.png" width="300px"></img>
             </button>
